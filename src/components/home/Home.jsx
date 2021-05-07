@@ -56,9 +56,9 @@ const Home = () => {
           />
         </div>
         <div className="carousel-center">
-          <i
+          {/* <i
             className="far fa-play-circle"
-            style={{ fontSize: 95, color: "#50b3d2" }}></i>
+            style={{ fontSize: 95, color: "#50b3d2" }}></i> */}
         </div>
         <div
           className="carousel-center"
@@ -160,7 +160,11 @@ const Home = () => {
     <div className="container">
       <div className="row mt-2">
         <div className="col">
-          <Carousel autoPlay infiniteLoop useKeyboardArrows showArrows={true}>
+          <Carousel
+            autoPlay={true}
+            infiniteLoop={true}
+            useKeyboardArrows={true}
+            showArrows={true}>
             {movies}
           </Carousel>
         </div>
